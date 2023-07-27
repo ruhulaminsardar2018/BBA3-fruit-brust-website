@@ -59,9 +59,11 @@
                     </button>
                 </div>
             </nav>
-            <!-- bannar -->
+
             <section>
-                <div class="carousel w-full lg:h-[500px]">
+                <div
+                    class="carousel w-full lg:h-[500px] bg-gradient-to-r from-[#121212] to-[#121212]"
+                >
                     <div id="slide1" class="carousel-item relative w-full">
                         <div class="bg-[url(images/banner1.png)] w-full">
                             <h1
@@ -142,7 +144,7 @@
                         </div>
                     </div>
                     <div id="slide4" class="carousel-item relative w-full">
-                        <div class="bg-[url(images/banner3.png)] w-full">
+                        <div class="bg-[url(images/banner4.png)] w-full">
                             <h1
                                 class="text-7xl font-extrabold text-white text-center pt-16 mb-6"
                             >
@@ -194,46 +196,71 @@
                 </div>
             </section>
         </header>
+        <!-- main section -->
+
         <main class="lg:max-w-7xl lg:mx-auto">
+            <!-- Deal section -->
             <section class="mb-12">
-                <div class="flex justify-between mb-12">
-                    <div>
-                        <h2 class="text-5xl font-extrabold mb-4">
+                <div class="flex justify-between mb-12 flex-col md:flex-row">
+                    <div class="text-center md:text-left md:w-[45%]">
+                        <h2 class="md:text-5xl text-2xl font-extrabold mb-4">
                             Deal of the day
                         </h2>
                         <span>
                             Contrary to popular belief, is not simply random
-                            text. It has roots in a piece of classical <br />
-                            Latin literature from 45 BC, making it over 2000
-                            years old.</span
-                        >
+                            text. It has roots in a piece of classical Latin
+                            literature from 45 BC, making it over 2000 years
+                            old.
+                        </span>
                     </div>
-                    <div class="flex justify-center items-center gap-10">
-                        <div>
-                            <h1 class="text-5xl font-extrabold mb-2">29</h1>
-                            <p class="font-medium">Days</p>
-                        </div>
-                        :
-                        <div>
-                            <h1 class="text-5xl font-extrabold mb-2">15</h1>
-                            <p class="font-medium">Hours</p>
-                        </div>
-                        :
-                        <div>
-                            <h1 class="text-5xl font-extrabold mb-2">25</h1>
-                            <p class="font-medium">Minutes</p>
-                        </div>
-                        :
-                        <div>
-                            <h1 class="text-5xl font-extrabold mb-2">08</h1>
-                            <p class="font-medium">Seconds</p>
-                        </div>
+                    <div class="">
+                        <p
+                            class="text-5xl text-center flex items-center gap-7 font-extrabold"
+                        >
+                            <span
+                                >29
+                                <span class="block mt-2 font-medium text-sm"
+                                    >day</span
+                                >
+                            </span>
+                            <span>
+                                <i
+                                    class="fa-solid fa-ellipsis-vertical text-2xl"
+                                ></i>
+                            </span>
+                            <span
+                                >15
+                                <span class="block mt-2 font-medium text-sm"
+                                    >Hours</span
+                                ></span
+                            >
+                            <span>
+                                <i
+                                    class="fa-solid fa-ellipsis-vertical text-2xl"
+                                ></i>
+                            </span>
+                            <span
+                                >25
+                                <span class="block mt-2 font-medium text-sm"
+                                    >Minutes</span
+                                ></span
+                            >
+                            <span>
+                                <i
+                                    class="fa-solid fa-ellipsis-vertical text-2xl"
+                                ></i>
+                            </span>
+                            <span
+                                >08
+                                <span class="block mt-2 font-medium text-sm"
+                                    >Seconds</span
+                                ></span
+                            >
+                        </p>
                     </div>
                 </div>
-                <div class="grid bg-gray-10 gap-4 lg:grid-cols-4 rounded-lg">
-                    <div
-                        class="text-center hover:border-y-2 hover:border-x-2 border-orange-300"
-                    >
+                <div class="grid gap-4 lg:grid-cols-4 rounded-lg">
+                    <div class="text-center border-2 border-orange-300 p-8">
                         <img
                             class="inline-block text-center"
                             src="./images/fruit6.png"
@@ -273,32 +300,69 @@
                                 class="mask mask-star-2 bg-orange-400"
                             />
                         </div>
-                        <!-- Open the modal using ID.showModal() method -->
                         <div>
                             <button
-                                class="btn"
+                                class="text-orange-800"
                                 onclick="my_modal_1.showModal()"
                             >
                                 Details
                             </button>
                             <dialog id="my_modal_1" class="modal">
-                                <form method="dialog" class="modal-box">
-                                    <h3 class="font-bold text-lg">Hello!</h3>
-                                    <p class="py-4">
-                                        Press ESC key or click the button below
-                                        to close
+                                <form
+                                    method="dialog"
+                                    class="modal-box text-center"
+                                >
+                                    <img
+                                        class="inline-block text-center"
+                                        src="./images/fruit6.png"
+                                        alt=""
+                                    />
+                                    <h3
+                                        class="font-bold text-lg text-orange-400"
+                                    >
+                                        Apples
+                                    </h3>
+                                    <p class="py-4 text-2xl text-yellow-300">
+                                        Please order now some fresh fruits
                                     </p>
-                                    <div class="modal-action">
-                                        <!-- if there is a button in form, it will close the modal -->
-                                        <button class="btn">Close</button>
+                                    <div class="rating">
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                            checked
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
                                     </div>
+                                    <button
+                                        class="block mx-auto btn text-center bg-[#F85559] rounded-lg text-white px-6 py-5 mt-6 mb-32"
+                                    >
+                                        Buy Now
+                                    </button>
                                 </form>
                             </dialog>
                         </div>
                     </div>
-                    <div
-                        class="text-center hover:border-y-2 hover:border-x-2 border-orange-300"
-                    >
+                    <div class="text-center border-2 border-orange-300 p-8">
                         <img
                             class="inline-block text-center"
                             src="./images/fruit7.png"
@@ -338,13 +402,67 @@
                                 class="mask mask-star-2 bg-orange-400"
                             />
                         </div>
-                        <p>
-                            <a href="">Details</a>
-                        </p>
+                        <div>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button
+                                class="text-orange-800"
+                                onclick="my_modal_2.showModal()"
+                            >
+                                Details
+                            </button>
+                            <dialog id="my_modal_2" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <img
+                                        class="inline-block text-center"
+                                        src="./images/fruit7.png"
+                                        alt=""
+                                    />
+                                    <h3
+                                        class="font-bold text-lg text-orange-400"
+                                    >
+                                        Orange
+                                    </h3>
+                                    <p class="py-4 text-2xl text-yellow-300">
+                                        Please order now some fresh fruits
+                                    </p>
+                                    <div class="rating">
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                            checked
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
+                                    </div>
+                                    <button
+                                        class="block mx-auto btn text-center bg-[#F85559] rounded-lg text-white px-6 py-5 mt-6 mb-32"
+                                    >
+                                        Buy Now
+                                    </button>
+                                </form>
+                            </dialog>
+                        </div>
                     </div>
-                    <div
-                        class="text-center hover:border-y-2 hover:border-x-2 border-orange-300"
-                    >
+                    <div class="text-center border-2 border-orange-300 p-8">
                         <img
                             class="inline-block text-center"
                             src="./images/fruit8.png"
@@ -384,13 +502,67 @@
                                 class="mask mask-star-2 bg-orange-400"
                             />
                         </div>
-                        <p>
-                            <a href="">Details</a>
-                        </p>
+                        <div>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button
+                                class="text-orange-800"
+                                onclick="my_modal_3.showModal()"
+                            >
+                                Details
+                            </button>
+                            <dialog id="my_modal_3" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <img
+                                        class="inline-block text-center"
+                                        src="./images/fruit8.png"
+                                        alt=""
+                                    />
+                                    <h3
+                                        class="font-bold text-lg text-orange-400"
+                                    >
+                                        Red Dragon
+                                    </h3>
+                                    <p class="py-4 text-2xl text-yellow-300">
+                                        Please order now some fresh fruits
+                                    </p>
+                                    <div class="rating">
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                            checked
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
+                                    </div>
+                                    <button
+                                        class="block mx-auto btn text-center bg-[#F85559] rounded-lg text-white px-6 py-5 mt-6 mb-32"
+                                    >
+                                        BUy Now
+                                    </button>
+                                </form>
+                            </dialog>
+                        </div>
                     </div>
-                    <div
-                        class="text-center hover:border-y-2 hover:border-x-2 border-orange-300"
-                    >
+                    <div class="text-center border-2 border-orange-300 p-8">
                         <img
                             class="inline-block text-center"
                             src="./images/fruit9.png"
@@ -430,13 +602,69 @@
                                 class="mask mask-star-2 bg-orange-400"
                             />
                         </div>
-                        <p>
-                            <a href="">Details</a>
-                        </p>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <div>
+                            <button
+                                class="text-orange-800"
+                                onclick="my_modal_4.showModal()"
+                            >
+                                Details
+                            </button>
+                            <dialog id="my_modal_4" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <img
+                                        class="inline-block text-center"
+                                        src="./images/fruit9.png"
+                                        alt=""
+                                    />
+                                    <h3
+                                        class="font-bold text-lg text-orange-400"
+                                    >
+                                        Banana
+                                    </h3>
+                                    <p class="py-4 text-2xl text-yellow-300">
+                                        Please order now some fresh fruits
+                                    </p>
+                                    <div class="rating">
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                            checked
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
+                                        <input
+                                            type="radio"
+                                            name="rating-2"
+                                            class="mask mask-star-2 bg-orange-400"
+                                        />
+                                    </div>
+                                    <button
+                                        class="block mx-auto btn text-center bg-[#F85559] rounded-lg text-white px-6 py-5 mt-6 mb-32"
+                                    >
+                                        Buy Now
+                                    </button>
+                                </form>
+                            </dialog>
+                        </div>
                     </div>
                 </div>
                 <button
-                    class="block mx-auto btn text-center bg-[#F85559] rounded-lg text-white px-6 py-5 mt-6 mb-32"
+                    class="block mx-auto py-3 px-7 text-center bg-[#F85559] rounded-lg text-white mt-7 mb-16"
                 >
                     Shop All
                 </button>
@@ -645,12 +873,18 @@
                 <p>My Account</p>
             </div>
             <div class="flex justify-center gap-6 text-white">
-                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-square-youtube"></i></a>
-                <a href=""><i class="fa-brands fa-invision"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-apple"></i></a>
+                <a href="">
+                    <i class="fa-brands fa-square-twitter text-3xl"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-facebook text-3xl"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-square-youtube text-3xl"></i>
+                </a>
+                <a href=""><i class="fa-brands fa-invision text-3xl"></i></a>
+                <a href=""><i class="fa-brands fa-instagram text-3xl"></i></a>
+                <a href=""><i class="fa-brands fa-apple text-3xl"></i></a>
             </div>
         </footer>
     </body>
